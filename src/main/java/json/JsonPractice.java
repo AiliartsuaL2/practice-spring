@@ -53,12 +53,13 @@ public class JsonPractice {
 
         JSONObject jo3 = new JSONObject();
         jo3.put("name","ailiartsua");
-        jo3.put("age","27");
+        jo3.put("age",27);
         jo3.put("word",ja);
 
         System.out.println(jo3.toString());
 
-
+        Object age1 = jo3.get("age");
+        System.out.println("age1 = " + age1.getClass());
 
     }
 
