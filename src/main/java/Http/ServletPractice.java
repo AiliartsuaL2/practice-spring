@@ -1,4 +1,4 @@
-package servlet;
+package Http;
 
 public class ServletPractice {
     public static void main(String[] args) {
@@ -11,6 +11,7 @@ public class ServletPractice {
 
         /**
          * HttpServletRequest
+         *  - Request에 담겨있는 내용을 서블릿에서 파싱해서 개발자에게 전달해주는 목적,,
          *  - Http 프로토콜의 request 정보를 서블릿에게 전달하기 위한 목적으로 사용
          *  - Header정보, Parameter, Cookie, URI, URL 등의 정보를 읽어들이는 메소드를 가진 클래스
          *      - URL : 실제 파일의 위치(직접적인 파일의 경로,, http://exam/work/url.html)
