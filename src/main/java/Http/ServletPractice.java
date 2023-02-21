@@ -37,6 +37,9 @@ public class ServletPractice {
          *          - void removeAttribute(String name) : ServletRequest 객체에 setAttribute(name)을 이용하여 등록된 데이터를 삭제한다.
          *          - void setAttribute(String name, Object o) : 클라이언트의 또 다른 서비스 요청에서도 계속 사용하고싶은 데이터를 ServletRequest 객체 안에 저장해준다.
          *          - void setCharacterEncoding(String env) : 클라이언트가 요청정보 몸체에 포함해서 보내주는 문자열들을 지정된 문자셋을 통해 인코딩해준다.
+         *
+         *
+         *          - RequestMapping : value에 해당하는 url로 연결, method 없을시 GET으로 ,,
          */
 
         /**
