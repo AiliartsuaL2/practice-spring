@@ -47,5 +47,16 @@
     sessionStorage.setItem("key2",JSON.stringify(payload));
     const data = JSON.parse(sessionStorage.getItem("key2"));
 
+    /**
+     * 실무에선 localStroage보단 sessionStroage 많이 사용,
+     * 배열을 넣고 빼고 하는 작업,, 카테고리 이동 관련 개선,,
+     */
+    let tmpParam = {};
+    let categoryArr = [];
+    categoryArr = JSON.parse(sessionStorage.getItem("categoryArrayKey"));
+    categoryArr.push(JSON.stringify(tmpParam));
+    sessionStorage.setItem("categoryArrayKey",JSON.stringify(categoryArr));
+
+
 
 </script>
